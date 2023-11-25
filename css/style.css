@@ -8,10 +8,12 @@ html,
 body {
     font-family: Manrope;
     color: var(--grey);
-    font-size: 14.62px;
+    font-size: 14px;
     line-height: 157%;
 }
-
+button{
+    cursor: pointer;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -70,7 +72,7 @@ body {
 }
 .theses_date{
     height: 26px;
-    font-size: 16.71px;
+    font-size: 16px;
     line-height: 157%;
 }
 .theses_head{
@@ -82,12 +84,14 @@ body {
     font-size: 46px;
     line-height: 157%;
     font-weight: bold;
-    mix-blend-mode: multiply;
+    background: linear-gradient(to right, #AB52CE, #FE8687);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .theses_online{
     margin-top: 6px;
     height: 70px;
-    font-size: 16.71px;
+    font-size: 16px;
     line-height: 157%;
 }
 .theses_description{
@@ -105,7 +109,7 @@ body {
     border-radius: 42px;
     color: #fff;
     font-family: Manrope;
-    font-size: 16.71px;
+    font-size: 16px;
     background: linear-gradient(to right, #FE8687, #AB52CE);
 }
 /* gifts */
@@ -117,23 +121,24 @@ body {
     margin-top: 65px;
 }
 .gift_title{
-    height: 70px;
-    font-size: 18.8px;
+    height: 58px;
+    font-size: 18px;
 }
 .title_underline{
     font-weight: bold;
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
 }
-.gift_size{
-    height: 80px;
-
-}
 .gift_size_text{
-    font-size: 58.49px;
+    height: 80px;
+    font-size: 58px;
+    line-height: 157%;
     font-weight: bold;
-    mix-blend-mode: multiply;
+    background: linear-gradient(to right, #AB52CE, #FE8687);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .gift_description{
     margin-top: 6px;
     color: var(--grey70);
@@ -176,7 +181,7 @@ body {
     margin-top: 28px;
 }
 .item_description_name{
-    font-size: 18.8px;
+    font-size: 18px;
 
 }
 .item_description_specialization{
@@ -201,8 +206,55 @@ body {
 /* page_program_description*/
 .page_program_description{
     height: 863px;
+    background-color: var(--grey10);
+}
+.info_title{
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 70px;
+
+}
+.info_list{
+    height: 485px;
+}
+.info_list > ul > li{
+    list-style-image: url('../assets/main/list.png');
+    margin-top: 24px;
+    text-align: left;
+}
+.info_list > ul > li:first-child{
+    margin-top: 0;
+}
+.info_list > ul > li>span{
+    margin-left: 20px;
 }
 
+.registration_button{
+    margin-top: 30px;
+}
+.registration_button-button{
+    height: 63px;
+    width: 345px;
+    border-radius: 42px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 16px;
+    background: linear-gradient(to right, #FE8687, #AB52CE);
+}
+.learn_more_button_button-button{
+    margin-top: 18px;
+    height: 63px;
+    width: 345px;
+    border-radius: 42px;
+    font-family: Manrope;
+    font-size: 16px;
+    background: none;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: linear-gradient(to right, #FE8687, #AB52CE);
+}
 /* sale_info */
 .sale_info-text {
     width: 345px;
