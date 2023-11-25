@@ -125,7 +125,7 @@ button {
     color: #fff;
     font-family: Manrope;
     font-size: 16px;
-    background: linear-gradient(to right, #FE8687, #AB52CE);
+    background: linear-gradient(to bottom left, #AB52CE, #FE8687 );
 }
 
 /* gifts */
@@ -194,7 +194,7 @@ button {
 /* page_description */
 .page_description {
     height: 265px;
-    background: linear-gradient(to right, rgba(254, 134, 135, 15%), rgba(171, 82, 206, 15%));
+    background: linear-gradient(to bottom left,  rgba(171, 82, 206, 15%), rgba(254, 134, 135, 15%));
 }
 
 .description_text {
@@ -326,21 +326,33 @@ button {
 
 .info_list {
     height: 485px;
+    min-width: 345px;
+}
+.info_list > ul{
+    display: grid;
+    grid-gap: 1rem;
 }
 
 .info_list > ul > li {
-    list-style-image: url('../assets/main/list.png');
-    list-style-position: inside;
-    margin-top: 24px;
-
+    display: grid;
+    grid-template-columns: 0 1fr;
+    grid-gap: 1.75em;
+    align-items: start;
+    /*margin-top: 24px;*/
+}
+.info_list > ul > li:before{
+    content: '';
+    margin-top: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #FE8687, #AB52CE);
 }
 
-.info_list > ul > li:first-child {
-    margin-top: 0;
+.info_list > ul > li:first-child:before{
+    background: transparent;
 }
-
-.info_list_span{
-    margin-right: 20px;
+.info_list_text{
     text-align: left;
 }
 
@@ -355,7 +367,7 @@ button {
     color: #fff;
     font-family: Manrope;
     font-size: 16px;
-    background: linear-gradient(to right, #FE8687, #AB52CE);
+    background: linear-gradient(to bottom left, #AB52CE, #FE8687 );
 }
 
 .learn_more_button_button-button {
@@ -378,7 +390,7 @@ button {
     right: 0;
     bottom: 0;
     border-radius: inherit;
-    background: linear-gradient(to right, #FE8687, #AB52CE);
+    background: linear-gradient(to bottom left, #AB52CE, #FE8687 );
     margin: -3px;
     z-index: -1;
 }
