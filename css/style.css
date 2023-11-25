@@ -80,6 +80,7 @@ button {
 .theses_date {
     height: 26px;
     font-size: 16px;
+    font-weight: bold;
     line-height: 157%;
 }
 
@@ -102,6 +103,7 @@ button {
     margin-top: 6px;
     height: 70px;
     font-size: 16px;
+    font-weight: bold;
     line-height: 157%;
 }
 
@@ -143,6 +145,7 @@ button {
 .gift_title {
     height: 58px;
     font-size: 18px;
+    line-height: 157%;
 }
 
 .title_underline {
@@ -208,6 +211,7 @@ button {
 
 .team_slider_title {
     height: 70px;
+    font-weight: bold;
 }
 
 .team_slider_items {
@@ -283,6 +287,7 @@ button {
 .team_head_title {
     margin-top: 12px;
     font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
     height: 70px;
 }
@@ -327,15 +332,16 @@ button {
     list-style-image: url('../assets/main/list.png');
     list-style-position: inside;
     margin-top: 24px;
-    text-align: left;
+
 }
 
 .info_list > ul > li:first-child {
     margin-top: 0;
 }
 
-.info_list > ul > li > span {
-    margin-left: 20px;
+.info_list_span{
+    margin-right: 20px;
+    text-align: left;
 }
 
 .registration_button {
