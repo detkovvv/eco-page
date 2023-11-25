@@ -220,6 +220,7 @@ button{
 }
 .info_list > ul > li{
     list-style-image: url('../assets/main/list.png');
+    list-style-position: inside;
     margin-top: 24px;
     text-align: left;
 }
