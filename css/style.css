@@ -2,6 +2,8 @@
     --grey: rgba(90, 92, 97, 100%);
     --grey10: rgba(90, 92, 97, 10%);
     --grey70: rgba(90, 92, 97, 70%);
+    --grey15: rgba(90, 92, 97, 15%);
+    --grey40: rgba(90, 92, 97, 40%);
 }
 
 html,
@@ -167,6 +169,7 @@ button{
     margin-top: 67px;
     height: 1321px;
 }
+
 .team_slider_title{
     height: 70px;
 }
@@ -187,12 +190,36 @@ button{
 .item_description_specialization{
     margin-top: 6px;
 }
-
+.slider_circles{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--grey15);
+    margin-right: 8px;;
+}
+.slider-circle:not:last-child{
+    margin-right: 0;
+}
+.circle_active{
+    background-color: var(--grey40);
+}
 .team_head{
-    margin-top: 64px;
+    margin-top: 51px;
+}
+.team_head_image{
+    position: absolute;
+    z-index: -1;
+    right: 0;
 }
 .team_head_title{
-    font-size: 16.71px;
+    margin-top: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     height: 70px;
 }
@@ -243,18 +270,29 @@ button{
     font-size: 16px;
     background: linear-gradient(to right, #FE8687, #AB52CE);
 }
+
 .learn_more_button_button-button{
+    position: relative;
     margin-top: 18px;
     height: 63px;
     width: 345px;
     border-radius: 42px;
     font-family: Manrope;
     font-size: 16px;
-    background: none;
-    border-image-slice: 1;
-    border-width: 3px;
-    border-style: solid;
-    border-image-source: linear-gradient(to right, #FE8687, #AB52CE);
+    background-clip: padding-box;
+    border: solid  3px transparent;
+}
+.learn_more_button_button-button::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: linear-gradient(to right, #FE8687, #AB52CE);
+    margin: -3px;
+    z-index: -1;
 }
 /* sale_info */
 .sale_info-text {
