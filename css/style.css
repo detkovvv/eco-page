@@ -33,8 +33,18 @@ button {
     justify-content: center;
     text-align: center;
     padding: 0 15px;
-    width: 376px;
+    max-width: 376px;
+}
 
+@media screen and (min-width: 768px){
+    .container{
+        min-width: 768px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        min-width: 1024px;
+    }
 }
 
 /* Header */
@@ -62,7 +72,7 @@ button {
 
 .main_info_image-line {
     height: 2px;
-    min-width: 384px;
+    min-width: 100%;
     background: linear-gradient(to right, #FE8687, #AB52CE);
     position: absolute;
 }
@@ -349,11 +359,12 @@ button {
     background: linear-gradient(to right, #FE8687, #AB52CE);
 }
 
-.info_list > ul > li:first-child:before{
-    background: transparent;
-}
 .info_list_text{
     text-align: left;
+}
+.info_list_text-title{
+    margin-left: 24px;
+    margin-bottom: 1rem;
 }
 
 .registration_button {
