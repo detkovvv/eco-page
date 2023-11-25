@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .container {
@@ -24,8 +25,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-width: 360px;
     padding: 0 15px;
+    min-width: 360px;
 
 }
 
@@ -196,6 +197,10 @@ body {
 .item_description_profession{
     margin-top: 13px;
     color: var(--grey70);
+}
+/* page_program_description*/
+.page_program_description{
+    height: 863px;
 }
 
 /* sale_info */
