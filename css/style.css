@@ -1,0 +1,241 @@
+:root {
+    --grey: rgba(90, 92, 97, 100%);
+    --grey10: rgba(90, 92, 97, 10%);
+    --grey70: rgba(90, 92, 97, 70%);
+}
+
+html,
+body {
+    font-family: Manrope;
+    color: var(--grey);
+    font-size: 14.62px;
+    line-height: 157%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 360px;
+    padding: 0 15px;
+
+}
+
+/* Header */
+.header {
+    position: absolute;
+}
+
+.header_logo {
+    margin-top: 26px;
+}
+
+.header_logo img {
+    width: 268px;
+    height: 65px;
+}
+
+/* Main */
+/* section page_main_info */
+.main_info_image {
+    margin-top: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_info_image-line {
+    height: 2px;
+    min-width: 384px;
+    background: linear-gradient(to right, #FE8687, #AB52CE);
+    position: absolute;
+}
+
+.main_info_image img {
+    height: 142px;
+    width: 142px;
+    z-index: 2;
+}
+.main_info_theses{
+    margin-top: 16px;
+}
+.theses_date{
+    height: 26px;
+    font-size: 16.71px;
+    line-height: 157%;
+}
+.theses_head{
+    margin-top: 7px;
+    height: 64px;
+
+}
+.theses_head_text{
+    font-size: 46px;
+    line-height: 157%;
+    font-weight: bold;
+    mix-blend-mode: multiply;
+}
+.theses_online{
+    margin-top: 6px;
+    height: 70px;
+    font-size: 16.71px;
+    line-height: 157%;
+}
+.theses_description{
+    margin-top: 45px;
+    line-height: 157%;
+    color: var(--grey70);
+    height: 92px;
+}
+.main_info_button{
+    margin-top: 23px;
+}
+.main_info_button-button{
+    height: 63px;
+    width: 345px;
+    border-radius: 42px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 16.71px;
+    background: linear-gradient(to right, #FE8687, #AB52CE);
+}
+/* gifts */
+.page_gifts{
+    margin-top: 75px;
+    background-color: var(--grey10);
+}
+.gift_guarantees{
+    margin-top: 65px;
+}
+.gift_title{
+    height: 70px;
+    font-size: 18.8px;
+}
+.title_underline{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+.gift_size{
+    height: 80px;
+
+}
+.gift_size_text{
+    font-size: 58.49px;
+    font-weight: bold;
+    mix-blend-mode: multiply;
+}
+.gift_description{
+    margin-top: 6px;
+    color: var(--grey70);
+    height: 92px;
+}
+.gift_main{
+    margin-top: 1px;
+    margin-bottom: 36px;
+}
+.page_divider{
+    height: 2px;
+}
+/* page_description */
+.page_description{
+    height: 265px;
+    background: linear-gradient(to right, rgba(254, 134, 135, 15%), rgba(171, 82, 206, 15%));
+}
+.description_text{
+    margin-top: 62px;
+    height: 166px;
+}
+
+/*page_team */
+
+.page_team{
+    margin-top: 67px;
+    height: 1321px;
+}
+.team_slider_title{
+    height: 70px;
+}
+.team_slider_items{
+    margin-top: 31px;
+}
+.slider_item_image{
+    height: 256px;
+    width: 243px;
+}
+.item_description{
+    margin-top: 28px;
+}
+.item_description_name{
+    font-size: 18.8px;
+
+}
+.item_description_specialization{
+    margin-top: 6px;
+}
+
+.team_head{
+    margin-top: 64px;
+}
+.team_head_title{
+    font-size: 16.71px;
+    text-transform: uppercase;
+    height: 70px;
+}
+.head_item_image{
+    margin-top: 47px;
+}
+.item_description_profession{
+    margin-top: 13px;
+    color: var(--grey70);
+}
+
+/* sale_info */
+.sale_info-text {
+    width: 345px;
+    height: 58px;
+    margin: 49px 0 41px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--grey10);
+}
+
+.footer_container {
+    padding: 34px 0 42px 0;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 24px 0 24px;
+}
+
+.social_item {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 39px;
+}
+
+.social_item:last-child {
+    margin-right: 0;
+}
+
+.footer_copyright {
+    margin-top: 24px;
+    color: var(--grey70);
+}
