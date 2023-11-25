@@ -13,9 +13,11 @@ body {
     font-size: 14px;
     line-height: 157%;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -24,13 +26,14 @@ button{
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 15px;
-    width: 100%;
+    width: 376px;
 
 }
 
@@ -69,20 +72,24 @@ button{
     width: 142px;
     z-index: 2;
 }
-.main_info_theses{
+
+.main_info_theses {
     margin-top: 16px;
 }
-.theses_date{
+
+.theses_date {
     height: 26px;
     font-size: 16px;
     line-height: 157%;
 }
-.theses_head{
+
+.theses_head {
     margin-top: 7px;
     height: 64px;
 
 }
-.theses_head_text{
+
+.theses_head_text {
     font-size: 46px;
     line-height: 157%;
     font-weight: bold;
@@ -90,22 +97,26 @@ button{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.theses_online{
+
+.theses_online {
     margin-top: 6px;
     height: 70px;
     font-size: 16px;
     line-height: 157%;
 }
-.theses_description{
+
+.theses_description {
     margin-top: 45px;
     line-height: 157%;
     color: var(--grey70);
     height: 92px;
 }
-.main_info_button{
+
+.main_info_button {
     margin-top: 23px;
 }
-.main_info_button-button{
+
+.main_info_button-button {
     height: 63px;
     width: 345px;
     border-radius: 42px;
@@ -114,24 +125,41 @@ button{
     font-size: 16px;
     background: linear-gradient(to right, #FE8687, #AB52CE);
 }
+
 /* gifts */
-.page_gifts{
+.page_gifts {
     margin-top: 75px;
     background-color: var(--grey10);
 }
-.gift_guarantees{
+
+.gift_guarantees {
     margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.gift_title{
+
+.gift_title {
     height: 58px;
     font-size: 18px;
 }
-.title_underline{
+
+.title_underline {
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-thickness: 0.5px;
+    text-decoration-thickness: 1px;
 }
-.gift_size_text{
+
+.gift_guarantees > .gift_size {
+    width: 143px;
+}
+
+.gift_main > .gift_size {
+    width: 181px;
+}
+
+.gift_size_text {
     height: 80px;
     font-size: 58px;
     line-height: 157%;
@@ -141,127 +169,180 @@ button{
     -webkit-text-fill-color: transparent;
 }
 
-.gift_description{
+.gift_description {
     margin-top: 6px;
     color: var(--grey70);
     height: 92px;
 }
-.gift_main{
+
+.gift_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 1px;
     margin-bottom: 36px;
 }
-.page_divider{
+
+.page_divider {
     height: 2px;
 }
+
 /* page_description */
-.page_description{
+.page_description {
     height: 265px;
     background: linear-gradient(to right, rgba(254, 134, 135, 15%), rgba(171, 82, 206, 15%));
 }
-.description_text{
+
+.description_text {
     margin-top: 62px;
     height: 166px;
 }
 
 /*page_team */
 
-.page_team{
+.page_team {
     margin-top: 67px;
     height: 1321px;
 }
 
-.team_slider_title{
+.team_slider_title {
     height: 70px;
 }
-.team_slider_items{
+
+.team_slider_items {
     margin-top: 31px;
 }
-.slider_item_image{
+
+.slider_item_image {
+    position: relative;
     height: 256px;
     width: 243px;
 }
-.item_description{
+.slider_item_image_decor{
+    width: 25px;
+    height: 25px;
+}
+.decor_top{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 25px;
+}
+.decor_bot{
+    position: absolute;
+    z-index: 2;
+    bottom: 25px;
+}
+.item_description {
     margin-top: 28px;
 }
-.item_description_name{
+
+.item_description_name {
     font-size: 18px;
 
 }
-.item_description_specialization{
+
+.item_description_specialization {
     margin-top: 6px;
 }
-.slider_circles{
+
+.slider_circles {
     margin-top: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.slider-circle{
+
+.slider-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--grey15);
     margin-right: 8px;;
 }
-.slider-circle:not:last-child{
+
+.slider-circle:not:last-child {
     margin-right: 0;
 }
-.circle_active{
+
+.circle_active {
     background-color: var(--grey40);
 }
-.team_head{
+
+.team_head {
     margin-top: 51px;
 }
-.team_head_image{
+
+.team_head_image {
     position: absolute;
     z-index: -1;
     right: 0;
 }
-.team_head_title{
+
+.team_head_title {
     margin-top: 12px;
     font-size: 16px;
     text-transform: uppercase;
     height: 70px;
 }
-.head_item_image{
+
+.head_item_image {
     margin-top: 47px;
 }
-.item_description_profession{
+
+.item_description_profession {
     margin-top: 13px;
     color: var(--grey70);
 }
+
 /* page_program_description*/
-.page_program_description{
+.page_program_description {
     height: 863px;
     background-color: var(--grey10);
 }
-.info_title{
+.program_description_container{
+    position: relative;
+}
+.program_description_image{
+    position: absolute;
+    top: 77px;
+    left: 0;
+    z-index: -1;
+}
+
+.info_title {
     margin-top: 60px;
     font-size: 18px;
     font-weight: bold;
     height: 70px;
 
 }
-.info_list{
+
+.info_list {
     height: 485px;
 }
-.info_list > ul > li{
+
+.info_list > ul > li {
     list-style-image: url('../assets/main/list.png');
     list-style-position: inside;
     margin-top: 24px;
     text-align: left;
 }
-.info_list > ul > li:first-child{
+
+.info_list > ul > li:first-child {
     margin-top: 0;
 }
-.info_list > ul > li>span{
+
+.info_list > ul > li > span {
     margin-left: 20px;
 }
 
-.registration_button{
+.registration_button {
     margin-top: 30px;
 }
-.registration_button-button{
+
+.registration_button-button {
     height: 63px;
     width: 345px;
     border-radius: 42px;
@@ -271,7 +352,7 @@ button{
     background: linear-gradient(to right, #FE8687, #AB52CE);
 }
 
-.learn_more_button_button-button{
+.learn_more_button_button-button {
     position: relative;
     margin-top: 18px;
     height: 63px;
@@ -280,9 +361,10 @@ button{
     font-family: Manrope;
     font-size: 16px;
     background-clip: padding-box;
-    border: solid  3px transparent;
+    border: solid 3px transparent;
 }
-.learn_more_button_button-button::before{
+
+.learn_more_button_button-button::before {
     position: absolute;
     content: '';
     top: 0;
@@ -294,6 +376,7 @@ button{
     margin: -3px;
     z-index: -1;
 }
+
 /* sale_info */
 .sale_info-text {
     width: 345px;
