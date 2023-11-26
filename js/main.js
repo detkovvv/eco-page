@@ -5,39 +5,26 @@ const swiper = new Swiper('.swiper-container', {
     loop: true,
     speed: 1000,
     slidesPerView: 'auto',
-    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
     breakpoints: {
-        "@1.00": {
+        0: {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        "@2.00": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        "@3.00": {
+        1024: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 50,
         },
-        "@4.00": {
+        1400: {
             slidesPerView: 4,
-            spaceBetween: 100,
+            spaceBetween: 10,
         },
-        "@5.00": {
-            slidesPerView: 5,
-            spaceBetween: 100,
-        },
-        "@6.00": {
-            slidesPerView: 6,
-            spaceBetween: 100,
-        },
-        "@7.00": {
-            slidesPerView: 7,
-            spaceBetween: 100,
+        1700: {
+            slidesPerView: 4,
+            spaceBetween: 50,
         },
     },
     navigation: {

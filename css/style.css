@@ -427,14 +427,6 @@ button {
     padding-bottom: 33px;
 }
 
-.swiper-wrapper {
-
-}
-
-.team_slider {
-    width: 100%;
-}
-
 .team_slider_title {
     height: 70px;
     font-weight: bold;
@@ -579,6 +571,10 @@ button {
         padding-top: 93px;
         padding-bottom: 125px ;
     }
+    .decor_top,
+    .decor_bot{
+        display: none;
+    }
     .team_head_image {
         display: none;
     }
@@ -597,7 +593,10 @@ button {
     .team_head_image_left {
         left: 0;
     }
-
+    .team_slider{
+        max-width: 1440px;
+        width: 100%;
+    }
     .team_slider_title {
         font-size: 30px;
     }
@@ -605,6 +604,7 @@ button {
     .swiper-container {
         margin-top: 89px;
         max-width: 1440px;
+        width: 100%;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -787,6 +787,7 @@ button {
     z-index: -1;
 }
 
+
 @media screen and (min-width: 1024px) {
     .program_description_container {
         height: 663px;
@@ -849,7 +850,7 @@ button {
         flex-flow: wrap;
         flex-direction: column;
         justify-content: space-between;
-        height: 107px;
+        height: 240px;
     }
 
     .program_buttons {
@@ -865,6 +866,24 @@ button {
     .learn_more_button_button-button {
         margin-top: 0;
         padding-left: 11px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .info_list > ul {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1540px){
+    .info_list > ul {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 107px;
     }
 }
 
