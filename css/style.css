@@ -10,7 +10,6 @@ html,
 body {
     font-family: Manrope;
     color: var(--grey);
-    font-size: 14px;
     line-height: 157%;
 }
 
@@ -161,7 +160,12 @@ button {
     margin-top: 75px;
     background-color: var(--grey10);
 }
-
+.gifts_container_mobile{
+    height: 580px;
+}
+.gifts_container_desktop{
+    display: none;
+}
 .gift_guarantees {
     margin-top: 65px;
     display: flex;
@@ -218,16 +222,36 @@ button {
 .page_divider {
     height: 2px;
 }
-
+@media screen and (min-width: 1024px){
+    .gifts_container_mobile{
+        display: none;
+    }
+}
 /* page_description */
 .page_description {
-    height: 265px;
     background: linear-gradient(to bottom left, rgba(171, 82, 206, 15%), rgba(254, 134, 135, 15%));
 }
-
+.description_container{
+    height: 265px;
+}
 .description_text {
-    margin-top: 62px;
+    display: flex;
+    align-items: center;
     height: 166px;
+}
+@media screen and (min-width: 1024px){
+    .description_container{
+        height: 232px;
+    }
+    .description_text{
+        margin-top: 0;
+
+        font-size: 18px;
+    }
+    .description_text > br{
+        display: none;
+        max-width: 1105px;
+    }
 }
 
 /*page_team */
