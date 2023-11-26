@@ -36,16 +36,24 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+    html,
+    body {
+        font-size: 18px;
+    }
+
     .container {
         padding: 0 12.5%;
-        max-width: 1440px;
+        /*max-width: 1440px;*/
     }
+}
+
+.header, .main, .footer {
+    width: 100%;
 }
 
 /* Header */
 .header {
     position: absolute;
-    width: 100%;
 }
 
 .header_logo {
@@ -65,21 +73,13 @@ button {
 
 /* Main */
 /* section page_main_info */
-@media screen and (min-width: 1024px) {
-    .main_info_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
 
-    .main_info_image img {
-        width: 526px;
-        height: 526px;
-    }
+.main_info_container_desktop {
+    display: none;
+}
 
-    .main_info_image-line {
-        display: none;
-    }
+.main_info_background {
+    display: none;
 }
 
 .main_info_image {
@@ -157,17 +157,92 @@ button {
     background: linear-gradient(to bottom left, #AB52CE, #FE8687);
 }
 
+@media screen and (min-width: 1024px) {
+    .page_main_info {
+        position: relative;
+    }
+
+    .main_info_background {
+        display: block;
+    }
+
+    .with_gradient_left {
+        position: absolute;
+        height: 100%;
+        width: 16%;
+        left: 0;
+        background: linear-gradient(to right, #DBF7FA, #fff);
+    }
+
+    .with_gradient_right {
+        position: absolute;
+        height: 100%;
+        width: 16%;
+        right: 0;
+        background: linear-gradient(to right, #fff, #DBF7FA);
+    }
+
+    .main_info_container_mobile {
+        display: none;
+    }
+
+    .main_info_container_desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .main_info_image img {
+        margin-top: 212px;
+        width: 526px;
+        height: 526px;
+        padding-right: 70px;
+    }
+
+    .main_info_theses {
+        margin-top: 212px;
+        padding-left: 70px;
+    }
+
+    .main_info_image-line {
+        display: none;
+    }
+
+    .theses_date {
+        font-size: 24px;
+    }
+
+    .theses_online {
+        font-size: 24px;
+        font-weight: 800;
+        margin-top: 65px;
+    }
+
+    .theses_description {
+        margin-top: 45px;
+    }
+
+    .theses_head {
+        height: 210px;
+    }
+
+}
+
 /* gifts */
 .page_gifts {
     margin-top: 75px;
     background-color: var(--grey10);
 }
-.gifts_container_mobile{
+
+.gifts_container_mobile {
     height: 580px;
 }
-.gifts_container_desktop{
+
+.gifts_container_desktop {
     display: none;
 }
+
 .gift_guarantees {
     margin-top: 65px;
     display: flex;
@@ -224,57 +299,73 @@ button {
 .page_divider {
     height: 2px;
 }
-@media screen and (min-width: 1024px){
-    .gifts_container_mobile{
+
+@media screen and (min-width: 1024px) {
+    .gifts_container_mobile {
         display: none;
     }
-    .gifts_container_desktop{
+
+    .gifts_container_desktop {
         position: relative;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         height: 498px;
     }
-    .gift_images{
+
+    .gift_images {
         flex-grow: 0.5;
     }
-    .gift_image_small{
+
+    .gift_image_small {
         position: absolute;
         left: calc(50% - 210px);
         top: 80px;
     }
-    .gift_image_big{
+
+    .gift_image_big {
         position: absolute;
         top: 50px;
         left: calc(50% - 155px);
     }
-    .gift_guarantees{
+
+    .gift_guarantees {
         margin-top: 0;
     }
+
+    .gift_title {
+        margin-top: 136px;
+    }
 }
+
 /* page_description */
 .page_description {
     background: linear-gradient(to bottom left, rgba(171, 82, 206, 15%), rgba(254, 134, 135, 15%));
 }
-.description_container{
+
+.description_container {
     height: 265px;
 }
+
 .description_text {
     display: flex;
     align-items: center;
     height: 166px;
 }
-@media screen and (min-width: 1024px){
-    .description_container{
+
+@media screen and (min-width: 1024px) {
+    .description_container {
         height: 232px;
     }
-    .description_text{
+
+    .description_text {
         margin-top: 0;
 
         font-size: 18px;
     }
-    .description_text > br{
+
+    .description_text > br {
         display: none;
         max-width: 1105px;
     }
@@ -285,6 +376,10 @@ button {
 .page_team {
     margin-top: 67px;
     height: 1321px;
+}
+
+.team_slider {
+    width: 100%;
 }
 
 .team_slider_title {
@@ -492,9 +587,10 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
-    .program_description_container{
+    .program_description_container {
         height: 663px;
     }
+
     .program_description_image_mobile {
         display: none;
     }
@@ -516,9 +612,11 @@ button {
         right: 38px;
         z-index: -1;
     }
+
     .info_title {
         margin-top: 0;
     }
+
     .program_description_info {
         display: flex;
         align-items: center;
@@ -576,7 +674,6 @@ button {
 
 /* Footer */
 .footer {
-    width: 100%;
     background-color: var(--grey10);
 }
 

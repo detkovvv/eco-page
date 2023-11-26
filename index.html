@@ -6,7 +6,11 @@
 	<title>Эко</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,12 +18,13 @@
 <div class="wrapper">
 	<header class="header">
 		<div class="header_container container">
-			<a href="#" class="header_logo"><img src="assets/header/logo.svg" loading="lazy" alt="Центр репродукции Клиники Екатерининская"></a>
+			<a href="#" class="header_logo"><img src="assets/header/logo.svg" loading="lazy"
+												 alt="Центр репродукции Клиники Екатерининская"></a>
 		</div>
 	</header>
-	<main class="page">
+	<main class="main">
 		<section class="page_main_info main_info">
-			<div class="main_info_container container">
+			<div class="main_info_container_mobile container">
 				<div class="main_info_image">
 					<div class="main_info_image-line"></div>
 					<img src="assets/main/main_info/main_info_image.png" loading="lazy" alt="main_info_image">
@@ -45,8 +50,31 @@
 				</div>
 			</div>
 			<div class="main_info_background">
-				<div class="with_gradient"></div>
-				<div class="with_gradient"></div>
+				<div class="with_gradient_left"></div>
+				<div class="with_gradient_right"></div>
+			</div>
+			<div class="main_info_container_desktop container">
+				<div class="main_info_image">
+					<img src="assets/main/main_info/main_info_image_desktop.svg" loading="lazy" alt="main_info_image_desktop.svg">
+				</div>
+				<div class="main_info_theses">
+					<div class="theses_date">14 Августа в 14:00</div>
+					<div class="theses_online">
+						ОНЛАЙН ЗНАКОМСТВО С КОМАНДОЙ ЭКО<br>
+						ВМЕСТЕ С РЕПРОДУКТОЛОГОМ
+					</div>
+					<div class="theses_description">
+						В прямом эфире мы пройдем через все этапы<br>
+						ЭКО вместе с действующей командой Клиники<br>
+						Екатерининская.
+					</div>
+					<div class="theses_head">
+						<img src="./assets/main/main_info/main_head_title.svg" alt="main_head_title.svg">
+					</div>
+					<div class="main_info_button">
+						<button class="main_info_button-button">ХОЧУ ВЫИГРАТЬ</button>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="page_gifts">
@@ -131,37 +159,113 @@
 						САМАЯ СИЛЬНАЯ КОМАНДА<br>
 						РЕПРОДУКЦИИ В ЮФО
 					</div>
-					<div class="team_slider_items slider_items">
-						<div class="slider_item">
-							<div class="slider_item_image item_image">
-								<div class="slider_item_image_decor decor_top">
-									<img src="./assets/main/team/union_top.png" alt="union_top.png">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slider_item_image item_image">
+									<div class="slider_item_image_decor decor_top">
+										<img src="./assets/main/team/union_top.png" alt="union_top.png">
+									</div>
+									<div class="slider_item_image_decor decor_bot">
+										<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+									</div>
+									<img src="./assets/main/team/portrait.png" alt="portrait.png">
 								</div>
-								<div class="slider_item_image_decor decor_bot">
-									<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+								<div class="slider_item_description item_description">
+									<div class="item_description_name">
+										Сандомирская<br>
+										Ольга Владимировна
+									</div>
+									<div class="item_description_specialization">
+										гинеколог-эндокринолог
+									</div>
 								</div>
-								<img src="./assets/main/team/portrait.png" alt="portrait.png">
 							</div>
-							<div class="slider_item_description item_description">
-								<div class="item_description_name">
-									Сандомирская<br>
-									Ольга Владимировна
+							<div class="swiper-slide">
+								<div class="slider_item_image item_image">
+									<div class="slider_item_image_decor decor_top">
+										<img src="./assets/main/team/union_top.png" alt="union_top.png">
+									</div>
+									<div class="slider_item_image_decor decor_bot">
+										<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+									</div>
+									<img src="./assets/main/team/portrait.png" alt="portrait.png">
 								</div>
-								<div class="item_description_specialization">
-									гинеколог-эндокринолог
+								<div class="slider_item_description item_description">
+									<div class="item_description_name">
+										Сандомирская<br>
+										Ольга Владимировна
+									</div>
+									<div class="item_description_specialization">
+										гинеколог-эндокринолог
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slider_circles">
-							<div class="slider-circle"></div>
-							<div class="slider-circle"></div>
-							<div class="slider-circle"></div>
-							<div class="slider-circle circle_active"></div>
-							<div class="slider-circle"></div>
-							<div class="slider-circle"></div>
-							<div class="slider-circle"></div>
+							<div class="swiper-slide">
+								<div class="slider_item_image item_image">
+									<div class="slider_item_image_decor decor_top">
+										<img src="./assets/main/team/union_top.png" alt="union_top.png">
+									</div>
+									<div class="slider_item_image_decor decor_bot">
+										<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+									</div>
+									<img src="./assets/main/team/portrait.png" alt="portrait.png">
+								</div>
+								<div class="slider_item_description item_description">
+									<div class="item_description_name">
+										Сандомирская<br>
+										Ольга Владимировна
+									</div>
+									<div class="item_description_specialization">
+										гинеколог-эндокринолог
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider_item_image item_image">
+									<div class="slider_item_image_decor decor_top">
+										<img src="./assets/main/team/union_top.png" alt="union_top.png">
+									</div>
+									<div class="slider_item_image_decor decor_bot">
+										<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+									</div>
+									<img src="./assets/main/team/portrait.png" alt="portrait.png">
+								</div>
+								<div class="slider_item_description item_description">
+									<div class="item_description_name">
+										Сандомирская<br>
+										Ольга Владимировна
+									</div>
+									<div class="item_description_specialization">
+										гинеколог-эндокринолог
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider_item_image item_image">
+									<div class="slider_item_image_decor decor_top">
+										<img src="./assets/main/team/union_top.png" alt="union_top.png">
+									</div>
+									<div class="slider_item_image_decor decor_bot">
+										<img src="./assets/main/team/union_bot.png" alt="union_bot.png">
+									</div>
+									<img src="./assets/main/team/portrait.png" alt="portrait.png">
+								</div>
+								<div class="slider_item_description item_description">
+									<div class="item_description_name">
+										Сандомирская<br>
+										Ольга Владимировна
+									</div>
+									<div class="item_description_specialization">
+										гинеколог-эндокринолог
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 				<div class="team_head">
 					<div class="team_head_image">
@@ -273,6 +377,6 @@
 		</div>
 	</footer>
 </div>
-<script src="js/main.js"></script>
+<script defer type="module" src="js/main.js"></script>
 </body>
 </html>
