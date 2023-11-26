@@ -399,7 +399,7 @@ button {
     height: 1321px;
 }
 .swiper-wrapper{
-    display: none;
+
 }
 .team_slider {
     width: 100%;
@@ -450,28 +450,12 @@ button {
 .item_description_specialization {
     margin-top: 6px;
 }
-
-.slider_circles {
-    margin-top: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team_slider{
+    width: 100%;
+    position: relative;
 }
-
-.slider-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--grey15);
-    margin-right: 8px;;
-}
-
-.slider-circle:not:last-child {
-    margin-right: 0;
-}
-
-.circle_active {
-    background-color: var(--grey40);
+.swiper-pagination{
+    bottom: -40px;
 }
 
 .team_head {
@@ -501,11 +485,11 @@ button {
     color: var(--grey70);
 }
 @media screen and (min-width: 1024px){
-    .swiper-slide{
-        display: none;
-    }
     .swiper-wrapper{
-        display: block;
+
+    }
+    .swiper-slide{
+
     }
 }
 /* page_program_description*/

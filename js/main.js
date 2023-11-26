@@ -26,4 +26,8 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 100,
         },
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
