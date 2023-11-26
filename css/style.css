@@ -38,12 +38,14 @@ button {
 @media screen and (min-width: 1024px) {
     .container {
         padding: 0 12.5%;
+        max-width: 1440px;
     }
 }
 
 /* Header */
 .header {
     position: absolute;
+    width: 100%;
 }
 
 .header_logo {
@@ -225,6 +227,30 @@ button {
 @media screen and (min-width: 1024px){
     .gifts_container_mobile{
         display: none;
+    }
+    .gifts_container_desktop{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 498px;
+    }
+    .gift_images{
+        flex-grow: 0.5;
+    }
+    .gift_image_small{
+        position: absolute;
+        left: calc(50% - 210px);
+        top: 80px;
+    }
+    .gift_image_big{
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 155px);
+    }
+    .gift_guarantees{
+        margin-top: 0;
     }
 }
 /* page_description */
@@ -550,6 +576,7 @@ button {
 
 /* Footer */
 .footer {
+    width: 100%;
     background-color: var(--grey10);
 }
 
