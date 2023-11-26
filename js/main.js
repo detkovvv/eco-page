@@ -9,20 +9,32 @@ const swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
     breakpoints: {
-        "@0.00": {
+        "@1.00": {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        "@0.75": {
+        "@2.00": {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        "@1.00": {
+        "@3.00": {
             slidesPerView: 3,
             spaceBetween: 40,
         },
-        "@1.50": {
+        "@4.00": {
             slidesPerView: 4,
+            spaceBetween: 100,
+        },
+        "@5.00": {
+            slidesPerView: 5,
+            spaceBetween: 100,
+        },
+        "@6.00": {
+            slidesPerView: 6,
+            spaceBetween: 100,
+        },
+        "@7.00": {
+            slidesPerView: 7,
             spaceBetween: 100,
         },
     },

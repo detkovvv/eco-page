@@ -4,6 +4,8 @@
     --grey70: rgba(90, 92, 97, 70%);
     --grey15: rgba(90, 92, 97, 15%);
     --grey40: rgba(90, 92, 97, 40%);
+    --swiper-theme-color: rgba(90, 92, 97, 40%);
+
 }
 
 html,
@@ -450,24 +452,67 @@ button {
 .item_description_specialization {
     margin-top: 6px;
 }
+.swiper-slide{
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .team_slider{
     width: 100%;
     position: relative;
 }
-.swiper-pagination{
+
+.swiper-pagination_bullet{
+    background-color: var(--grey15);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: -40px;
 }
-
+.swiper-button-prev,
+.swiper-button-next{
+    opacity: 0;
+}
 .team_head {
     margin-top: 51px;
+
+}
+.team_head_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider_item_image_decor {
+    width: 25px;
+    height: 25px;
 }
 
+.decor_top {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 25px;
+}
+
+.decor_bot {
+    position: absolute;
+    z-index: 2;
+    bottom: 25px;
+}
 .team_head_image {
     position: absolute;
     z-index: -1;
     right: 0;
 }
-
+.team_head_image_left,
+.team_head_image_right{
+    display: none;
+}
 .team_head_title {
     margin-top: 12px;
     font-size: 16px;
@@ -477,19 +522,97 @@ button {
 }
 
 .head_item_image {
+    position: relative;
     margin-top: 47px;
+    height: 256px;
+    width: 243px;
 }
 
 .item_description_profession {
     margin-top: 13px;
     color: var(--grey70);
 }
+.item_description_profession-desktop{
+    display: none;
+}
 @media screen and (min-width: 1024px){
-    .swiper-wrapper{
-
+    .team_head_image{
+        display: none;
+    }
+    .team_head_image_left,
+    .team_head_image_right{
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .team_head_image_right{
+        right: 0;
+    }
+    .team_head_image_left{
+        left: 0;
+    }
+    .team_slider_title{
+        font-size: 30px;
+    }
+    .swiper-container{
+        margin-top: 89px;
     }
     .swiper-slide{
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        opacity: 100;
+        background-color: #ffffff;
+    }
+    .swiper-button-prev,
+    .swiper-button-next:after{
+        color: #7E39A8;
+    }
+    .swiper-button-prev{
 
+    }
+    .team_head_title{
+        display: none;
+    }
+    .team_head_item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .head_item_image {
+        width: 342px;
+        height: 363px;
+    }
+    .head_item_image > img{
+       width: 307px;
+        height: 362px;
+    }
+    .head_item_description > .item_description_name{
+        font-size: 32px;
+    }
+    .head_item_description{
+
+    }
+    .head_item_description > .item_description_specialization{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    .head_item_description > .item_description_profession{
+        display: none;
+    }
+    .item_description_profession-desktop{
+        display: block;
+        margin-top: 1em;
+        font-size: 20px;
+        color: var(--grey70);
     }
 }
 /* page_program_description*/
