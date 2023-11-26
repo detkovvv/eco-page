@@ -64,6 +64,10 @@ button {
     .header_logo {
         margin-top: 65px;
     }
+    .header_logo img {
+        width: 328px;
+        height: 86px;
+    }
 }
 
 .header_logo img {
@@ -394,7 +398,9 @@ button {
     margin-top: 67px;
     height: 1321px;
 }
-
+.swiper-wrapper{
+    display: none;
+}
 .team_slider {
     width: 100%;
 }
@@ -494,7 +500,14 @@ button {
     margin-top: 13px;
     color: var(--grey70);
 }
-
+@media screen and (min-width: 1024px){
+    .swiper-slide{
+        display: none;
+    }
+    .swiper-wrapper{
+        display: block;
+    }
+}
 /* page_program_description*/
 .page_program_description {
     background-color: var(--grey10);
