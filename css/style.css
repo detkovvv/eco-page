@@ -61,7 +61,10 @@ button {
 .header_logo {
     margin-top: 26px;
 }
-
+.header_logo img {
+    width: 268px;
+    height: 65px;
+}
 @media screen and (min-width: 1024px) {
     .header_logo {
         margin-top: 65px;
@@ -70,11 +73,6 @@ button {
         width: 328px;
         height: 86px;
     }
-}
-
-.header_logo img {
-    width: 268px;
-    height: 65px;
 }
 
 /* Main */
@@ -148,6 +146,9 @@ button {
     color: var(--grey70);
     height: 92px;
 }
+.theses_description_desktop{
+    display: none;
+}
 
 .main_info_button {
     margin-top: 23px;
@@ -199,8 +200,13 @@ button {
         justify-content: center;
         padding-bottom: 84px;
     }
+    .main_info_item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-    .main_info_image img {
+    .main_info_image_desktop img {
         margin-top: 212px;
         width: 526px;
         height: 526px;
@@ -227,9 +233,13 @@ button {
     }
 
     .theses_description {
-        margin-top: 45px;
+        display: none   ;
     }
+.theses_description_desktop{
 
+    display: block;
+    margin-top: 45px;
+}
     .theses_head {
         height: 210px;
     }
@@ -556,6 +566,7 @@ button {
     }
     .swiper-container{
         margin-top: 89px;
+        max-width: 1300px;
     }
     .swiper-slide{
         max-width: 320px;
@@ -570,14 +581,11 @@ button {
     .swiper-button-prev,
     .swiper-button-next{
         opacity: 100;
-        background-color: #ffffff;
+        background-color: transparent;
     }
     .swiper-button-prev,
     .swiper-button-next:after{
         color: #7E39A8;
-    }
-    .swiper-button-prev{
-
     }
     .team_head_title{
         display: none;
