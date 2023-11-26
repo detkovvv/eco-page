@@ -18,10 +18,11 @@
 <div class="wrapper">
 	<header class="header">
 		<div class="header_container container">
-			<div class="header_logo">
-				<img src="assets/header/logo.svg" loading="lazy"
-					 alt="Центр репродукции Клиники Екатерининская">
-			</div>
+			<picture class="header_logo">
+				<source media="(max-width: 1023px)" srcset="assets/header/logo_mobile.png">
+				<source media="(min-width: 1024px)" srcset="assets/header/logo_desktop.png">
+				<img src="./assets/header/logo_mobile.png" alt="центр репродукции клиники Екатерининская">
+			</picture>
 		</div>
 	</header>
 	<main class="main">

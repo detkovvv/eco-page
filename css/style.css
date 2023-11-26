@@ -51,7 +51,6 @@ button {
 
 .header, .main, .footer {
     width: 100%;
-    overflow: hidden;
 }
 
 /* Header */
@@ -61,11 +60,6 @@ button {
 
 .header_logo {
     margin-top: 26px;
-}
-
-.header_logo img {
-    width: 268px;
-    height: 65px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -138,7 +132,6 @@ button {
 
 .theses_online {
     margin-top: 6px;
-    height: 70px;
     font-size: 16px;
     font-weight: bold;
     line-height: 157%;
@@ -348,12 +341,12 @@ button {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 498px;
     }
 
     .gift_images {
-        flex-grow: 0.5;
+        z-index: -1;
     }
 
     .gift_image_small {
@@ -429,8 +422,8 @@ button {
 /*page_team */
 
 .page_team {
-    margin-top: 67px;
-    height: 1321px;
+    padding-top: 67px;
+    padding-bottom: 33px;
 }
 
 .swiper-wrapper {
@@ -581,6 +574,10 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+    .page_team {
+        padding-top: 93px;
+        padding-bottom: 125px ;
+    }
     .team_head_image {
         display: none;
     }
