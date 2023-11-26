@@ -3,7 +3,9 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 const swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 1,
+    speed: 1000,
+    slidesPerView: 'auto',
+    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
