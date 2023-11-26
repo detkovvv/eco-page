@@ -62,14 +62,17 @@ button {
 .header_logo {
     margin-top: 26px;
 }
+
 .header_logo img {
     width: 268px;
     height: 65px;
 }
+
 @media screen and (min-width: 1024px) {
     .header_logo {
         margin-top: 65px;
     }
+
     .header_logo img {
         width: 328px;
         height: 86px;
@@ -147,7 +150,8 @@ button {
     color: var(--grey70);
     height: 92px;
 }
-.theses_description_desktop{
+
+.theses_description_desktop {
     display: none;
 }
 
@@ -201,7 +205,8 @@ button {
         justify-content: center;
         padding-bottom: 84px;
     }
-    .main_info_item{
+
+    .main_info_item {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -234,15 +239,26 @@ button {
     }
 
     .theses_description {
-        display: none   ;
+        display: none;
     }
-.theses_description_desktop{
 
-    display: block;
-    margin-top: 45px;
-}
+    .theses_description_desktop {
+
+        display: block;
+        margin-top: 45px;
+    }
+
     .theses_head {
         height: 210px;
+    }
+
+    .theses_head > h1  {
+        font-size: 136px;
+    }
+
+    .theses_head >  h2 {
+        font-size: 24px;
+        margin-top: -55px;
     }
 
 }
@@ -322,9 +338,11 @@ button {
     .gifts_container_mobile {
         display: none;
     }
-    .page_gifts{
+
+    .page_gifts {
         margin-top: 0;
     }
+
     .gifts_container_desktop {
         position: relative;
         display: flex;
@@ -358,17 +376,20 @@ button {
         margin-top: 136px;
         font-size: 24px;
     }
-    .gift_size{
+
+    .gift_size {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .gift_size_text{
+
+    .gift_size_text {
         font-size: 118px;
         height: 161px;
         width: 316px;
     }
-    .gift_description{
+
+    .gift_description {
         font-size: 18px;
     }
 }
@@ -411,9 +432,11 @@ button {
     margin-top: 67px;
     height: 1321px;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
 
 }
+
 .team_slider {
     width: 100%;
 }
@@ -463,41 +486,47 @@ button {
 .item_description_specialization {
     margin-top: 6px;
 }
-.swiper-slide{
+
+.swiper-slide {
     width: 216px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.team_slider{
+
+.team_slider {
     width: 100%;
     position: relative;
 }
 
-.swiper-pagination_bullet{
+.swiper-pagination_bullet {
     background-color: var(--grey15);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: -40px;
 }
+
 .swiper-button-prev,
-.swiper-button-next{
+.swiper-button-next {
     opacity: 0;
 }
+
 .team_head {
     margin-top: 51px;
 
 }
-.team_head_item{
+
+.team_head_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .slider_item_image_decor {
     width: 25px;
     height: 25px;
@@ -515,15 +544,18 @@ button {
     z-index: 2;
     bottom: 25px;
 }
+
 .team_head_image {
     position: absolute;
     z-index: -1;
     right: 0;
 }
+
 .team_head_image_left,
-.team_head_image_right{
+.team_head_image_right {
     display: none;
 }
+
 .team_head_title {
     margin-top: 12px;
     font-size: 16px;
@@ -543,29 +575,36 @@ button {
     margin-top: 13px;
     color: var(--grey70);
 }
-.item_description_profession-desktop{
+
+.item_description_profession-desktop {
     display: none;
 }
-@media screen and (min-width: 1024px){
-    .team_head_image{
+
+@media screen and (min-width: 1024px) {
+    .team_head_image {
         display: none;
     }
+
     .team_head_image_left,
-    .team_head_image_right{
+    .team_head_image_right {
         display: block;
         position: absolute;
         z-index: -1;
     }
-    .team_head_image_right{
+
+    .team_head_image_right {
         right: 0;
     }
-    .team_head_image_left{
+
+    .team_head_image_left {
         left: 0;
     }
-    .team_slider_title{
+
+    .team_slider_title {
         font-size: 30px;
     }
-    .swiper-container{
+
+    .swiper-container {
         margin-top: 89px;
         max-width: 1440px;
         overflow: hidden;
@@ -573,61 +612,75 @@ button {
         justify-content: center;
         align-items: center;
     }
-    .swiper-slide{
+
+    .swiper-slide {
         max-width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .swiper-pagination{
+
+    .swiper-pagination {
         display: none;
     }
+
     .swiper-button-prev,
-    .swiper-button-next{
+    .swiper-button-next {
         opacity: 100;
         background-color: transparent;
     }
+
     .swiper-button-prev,
-    .swiper-button-next:after{
+    .swiper-button-next:after {
         color: #7E39A8;
     }
-    .team_head_title{
+
+    .team_head_title {
         display: none;
     }
-    .team_head_item{
+
+    .team_head_item {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
+
     .head_item_image {
         width: 342px;
         height: 363px;
     }
-    .head_item_image > img{
-       width: 307px;
+
+    .head_item_image > img {
+        width: 307px;
         height: 362px;
     }
-    .head_item_description > .item_description_name{
+
+    .head_item_description > .item_description_name {
         font-size: 32px;
     }
-    .head_item_description{
+
+    .head_item_description {
 
     }
-    .head_item_description > .item_description_specialization{
+
+    .head_item_description > .item_description_specialization {
         font-size: 20px;
         margin-top: 24px;
     }
-    .head_item_description > .item_description_profession{
+
+    .head_item_description > .item_description_profession {
         display: none;
     }
-    .item_description_profession-desktop{
+
+    .item_description_profession-desktop {
         display: block;
         margin-top: 1em;
         font-size: 20px;
         color: var(--grey70);
     }
 }
+
 /* page_program_description*/
 .page_program_description {
     background-color: var(--grey10);
@@ -776,14 +829,15 @@ button {
     }
 
 
-
     .info_list {
         margin-top: 35px;
         height: 100%;
     }
-    .info_list_text{
+
+    .info_list_text {
         font-size: 14px;
     }
+
     .info_list_text-title {
         height: 86px;
         margin-left: 0;
