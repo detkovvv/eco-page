@@ -51,6 +51,7 @@ button {
 
 .header, .main, .footer {
     width: 100%;
+    overflow: hidden;
 }
 
 /* Header */
@@ -566,7 +567,11 @@ button {
     }
     .swiper-container{
         margin-top: 89px;
-        max-width: 1300px;
+        max-width: 1440px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .swiper-slide{
         max-width: 320px;
@@ -770,16 +775,21 @@ button {
         flex-direction: column;
     }
 
+
+
+    .info_list {
+        margin-top: 35px;
+        height: 100%;
+    }
+    .info_list_text{
+        font-size: 14px;
+    }
     .info_list_text-title {
         height: 86px;
         margin-left: 0;
         margin-bottom: 1rem;
         font-size: 18px;
         text-align: center;
-    }
-
-    .info_list {
-        height: 107px;
     }
 
     .info_list > ul {
