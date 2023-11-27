@@ -826,12 +826,14 @@ button {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
     }
 
 
     .info_list {
         margin-top: 35px;
         height: 100%;
+        width: 100%;
     }
 
     .info_list_text {
@@ -871,19 +873,11 @@ button {
 }
 @media screen and (min-width: 1200px){
     .info_list > ul {
-        display: flex;
-        flex-flow: wrap;
-        flex-direction: column;
-        justify-content: space-between;
         height: 200px;
     }
 }
 @media screen and (min-width: 1540px){
     .info_list > ul {
-        display: flex;
-        flex-flow: wrap;
-        flex-direction: column;
-        justify-content: space-between;
         height: 107px;
     }
 }
