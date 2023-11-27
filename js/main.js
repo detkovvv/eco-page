@@ -1,10 +1,10 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
+const swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
     loop: true,
     speed: 1000,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
