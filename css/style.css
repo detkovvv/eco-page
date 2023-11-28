@@ -151,7 +151,8 @@ button {
     margin-top: 23px;
 }
 
-.main_info_button-button {
+.main_info_button {
+    margin-top: 23px;
     height: 63px;
     width: 345px;
     border-radius: 42px;
@@ -725,8 +726,10 @@ button {
 }
 .program_buttons{
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
-.registration_button-button {
+.registration_button {
     height: 63px;
     width: 345px;
     border-radius: 42px;
@@ -736,7 +739,7 @@ button {
     background: linear-gradient(to bottom left, #AB52CE, #FE8687);
 }
 
-.learn_more_button_button-button {
+.learn_more_button {
     position: relative;
     margin-top: 18px;
     height: 63px;
@@ -749,7 +752,7 @@ button {
     border: solid 3px transparent;
 }
 
-.learn_more_button_button-button::before {
+.learn_more_button::before {
     position: absolute;
     content: '';
     top: 0;
@@ -839,13 +842,9 @@ button {
         flex-direction: row;
     }
 
-    .registration_button {
-        padding-right: 11px;
-    }
-
-    .learn_more_button_button-button {
+    .learn_more_button {
         margin-top: 0;
-        padding-left: 11px;
+        margin-left: 22px;
     }
 }
 
