@@ -339,24 +339,11 @@ button {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 498px;
-    }
-
-    .gift_images {
-        z-index: -1;
-    }
-
-    .gift_image_small {
-        position: absolute;
-        left: calc(50% - 210px);
-        top: 80px;
-    }
-
-    .gift_image_big {
-        position: absolute;
-        top: 50px;
-        left: calc(50% - 155px);
+        background-image: url("../assets/main/gifts/gifts_background.png");
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .gift_guarantees {
