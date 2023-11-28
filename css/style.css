@@ -261,6 +261,7 @@ button {
 }
 
 .gifts_container_mobile {
+    padding-top: 65px;
     height: 580px;
 }
 
@@ -269,7 +270,6 @@ button {
 }
 
 .gift_guarantees {
-    margin-top: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,6 +335,7 @@ button {
     }
 
     .gifts_container_desktop {
+        padding-top: 133px;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -351,7 +352,6 @@ button {
     }
 
     .gift_title {
-        margin-top: 136px;
         font-size: 24px;
     }
 
@@ -669,7 +669,7 @@ button {
 }
 
 .program_description_container {
-    height: 863px;
+    padding: 60px 0 72px 0;
     position: relative;
 }
 
@@ -689,14 +689,12 @@ button {
 }
 
 .info_title {
-    margin-top: 60px;
     font-size: 18px;
     font-weight: bold;
     height: 70px;
 }
 
 .info_list {
-    height: 485px;
     min-width: 345px;
 }
 
@@ -729,11 +727,9 @@ button {
     margin-left: 24px;
     margin-bottom: 1rem;
 }
-
-.registration_button {
-
+.program_buttons{
+    margin-top: 30px;
 }
-
 .registration_button-button {
     height: 63px;
     width: 345px;
@@ -773,7 +769,7 @@ button {
 
 @media screen and (min-width: 1024px) {
     .program_description_container {
-        height: 663px;
+        padding: 94px 0 118px 0;
     }
 
     .program_description_image_mobile {
@@ -814,8 +810,9 @@ button {
 
     .info_list {
         margin-top: 35px;
-        height: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .info_list_text {
