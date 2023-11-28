@@ -833,7 +833,7 @@ button:hover{
 
     .info_list > ul {
         display: flex;
-        flex-flow: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
         height: 240px;
