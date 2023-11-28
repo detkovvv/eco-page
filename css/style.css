@@ -724,11 +724,13 @@ button {
     margin-left: 24px;
     margin-bottom: 1rem;
 }
-.program_buttons{
+
+.program_buttons {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
+
 .registration_button {
     height: 63px;
     width: 345px;
@@ -833,9 +835,11 @@ button {
         justify-content: space-between;
         height: 240px;
     }
-.info_list > ul > li {
-   padding: 0 17px;
-}
+
+    .info_list > ul > li {
+        padding: 0 17px;
+    }
+
     .program_buttons {
         margin-top: 59px;
         display: flex;
@@ -861,17 +865,18 @@ button {
 }
 
 /* sale_info */
-.sale_info-text {
+.sale_info_text {
     padding: 48px 0 40px 0;
     display: flex;
     align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
-    .sale_info-text {
+    .sale_info_text {
         padding: 80px 0 71px 0;
     }
-    .sale_info-text > br {
+
+    .sale_info_text > br {
         display: none;
     }
 }
