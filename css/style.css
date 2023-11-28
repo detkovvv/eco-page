@@ -813,9 +813,10 @@ button:hover{
 
     .info_list {
         margin-top: 35px;
-        width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        max-width: 1440px;
     }
 
     .info_list_text {
@@ -837,6 +838,7 @@ button:hover{
         flex-direction: column;
         justify-content: space-between;
         height: 240px;
+        align-content: space-evenly;
     }
 
     .info_list > ul > li {
