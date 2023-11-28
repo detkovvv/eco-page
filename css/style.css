@@ -20,6 +20,9 @@ body {
 button {
     cursor: pointer;
 }
+button:hover{
+    transform: skew(-10deg);
+}
 
 .wrapper {
     display: flex;
