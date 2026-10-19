@@ -19,8 +19,33 @@ body {
 button {
     cursor: pointer;
 }
-button:hover{
-    transform: skew(-10deg);
+
+.main_info_button,
+.registration_button,
+.learn_more_button {
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.main_info_button:hover,
+.registration_button:hover,
+.learn_more_button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(171, 82, 206, 22%);
+}
+
+.main_info_button:focus-visible,
+.registration_button:focus-visible,
+.learn_more_button:focus-visible {
+    outline: 3px solid #8d3eb1;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main_info_button,
+    .registration_button,
+    .learn_more_button {
+        transition: none;
+    }
 }
 
 .wrapper {
