@@ -14,7 +14,6 @@ body {
     color: var(--grey);
     font-size: 14px;
     line-height: 157%;
-    overflow-x: hidden;
 }
 
 button {
@@ -28,7 +27,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     min-height: 100%;
     overflow: hidden;
 }
@@ -41,7 +40,7 @@ button:hover{
     justify-content: center;
     text-align: center;
     padding: 0 15px;
-    width: 100vw;
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -96,7 +95,8 @@ button:hover{
 
 .main_info_image-line {
     height: 2px;
-    min-width: 100vw;
+    left: 0;
+    right: 0;
     background: linear-gradient(to right, #FE8687, #AB52CE);
     position: absolute;
 }
@@ -157,7 +157,7 @@ button:hover{
 .main_info_button {
     margin-top: 23px;
     height: 63px;
-    width: 345px;
+    width: min(345px, 100%);
     border-radius: 42px;
     color: #fff;
     font-family: Manrope;
@@ -266,7 +266,7 @@ button:hover{
 
 .gifts_container_mobile {
     padding-top: 65px;
-    height: 580px;
+    min-height: 580px;
 }
 
 .gifts_container_desktop {
@@ -382,13 +382,13 @@ button:hover{
 }
 
 .description_container {
-    height: 265px;
+    min-height: 265px;
 }
 
 .description_text {
     display: flex;
     align-items: center;
-    height: 166px;
+    min-height: 166px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -416,7 +416,7 @@ button:hover{
 }
 
 .team_slider_title {
-    height: 70px;
+    min-height: 70px;
     font-weight: bold;
 }
 
@@ -699,7 +699,7 @@ button:hover{
 }
 
 .info_list {
-    min-width: 345px;
+    width: min(345px, 100%);
 }
 
 .info_list > ul > li {
@@ -736,7 +736,7 @@ button:hover{
 
 .registration_button {
     height: 63px;
-    width: 345px;
+    width: min(345px, 100%);
     border-radius: 42px;
     color: #fff;
     font-family: Manrope;
@@ -748,7 +748,7 @@ button:hover{
     position: relative;
     margin-top: 18px;
     height: 63px;
-    width: 345px;
+    width: min(345px, 100%);
     border-radius: 42px;
     font-family: Manrope;
     color: var(--grey);
@@ -817,6 +817,7 @@ button:hover{
         justify-content: center;
         flex-direction: column;
         max-width: 1440px;
+        width: 100%;
     }
 
     .info_list_text {
@@ -849,11 +850,14 @@ button:hover{
         margin-top: 59px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
     }
 
     .learn_more_button {
         margin-top: 0;
-        margin-left: 22px;
+        margin-left: 0;
     }
 }
 
@@ -898,8 +902,9 @@ button:hover{
 .footer_social {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 34px 24px 0 24px;
+    justify-content: center;
+    gap: clamp(12px, 4vw, 39px);
+    padding: 34px 0 0;
 }
 
 .social_item {
@@ -909,7 +914,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 39px;
+    flex: 0 0 52px;
 }
 
 .social_item:last-child {
